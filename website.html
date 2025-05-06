@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenThumb Plants</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GreenThumb</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#services">Services</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="signup-btn">Sign Up</a>
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to GreenThumb Plants</h1>
+        <p>Discover the perfect plants for your space</p>
+        <a href="#shop" class="cta-button">Shop Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About GreenThumb</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Plant Paradise</h3>
+                <p>GreenThumb is your one-stop destination for all things plants. We specialize in providing high-quality indoor and outdoor plants, along with expert advice to help your green friends thrive.</p>
+                <p>With over 10 years of experience, we carefully select and nurture each plant to ensure they arrive at your doorstep in perfect condition.</p>
+            </div>
+            <div class="about-image">
+                <img src="greenhouse.jpg" alt="Our Greenhouse" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="shop">
+        <h2>Our Plants</h2>
+        <div class="shop-filters">
+            <button class="filter-btn active" data-filter="all">All Plants</button>
+            <button class="filter-btn" data-filter="indoor">Indoor</button>
+            <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+            <button class="filter-btn" data-filter="succulents">Succulents</button>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="indoor" data-product-id="snake-plant-001">
+                <img src="snakeplant.jpg" alt="Snake Plant" loading="lazy">
+                <h3>Snake Plant</h3>
+                <p class="price">$29.99</p>
+                <p class="description">Low-maintenance indoor plant, perfect for beginners.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="indoor" data-product-id="peace-lily-002">
+                <img src="peacelily.jpg" alt="Peace Lily" loading="lazy">
+                <h3>Peace Lily</h3>
+                <p class="price">$34.99</p>
+                <p class="description">Beautiful flowering indoor plant that purifies air.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="outdoor" data-product-id="rose-bush-003">
+                <img src="rosebush.jpg" alt="Rose Bush" loading="lazy">
+                <h3>Rose Bush</h3>
+                <p class="price">$45.99</p>
+                <p class="description">Fragrant climbing roses, perfect for gardens.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="succulents" data-product-id="aloe-vera-004">
+                <img src="aloevera.jpg" alt="Aloe Vera" loading="lazy">
+                <h3>Aloe Vera</h3>
+                <p class="price">$19.99</p>
+                <p class="description">Medicinal succulent, easy to maintain.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="indoor" data-product-id="monstera-005">
+                <img src="MonsteraDeliciosa.jpg" alt="Monstera" loading="lazy">
+                <h3>Monstera Deliciosa</h3>
+                <p class="price">$49.99</p>
+                <p class="description">Tropical beauty with unique split leaves.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="outdoor" data-product-id="hydrangea-006">
+                <img src="Hydrangea.jpg" alt="Hydrangea" loading="lazy">
+                <h3>Hydrangea</h3>
+                <p class="price">$39.99</p>
+                <p class="description">Stunning flowering shrub for gardens.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="succulents" data-product-id="echeveria-007">
+                <img src="Echeveria.jpg" alt="Echeveria" loading="lazy">
+                <h3>Echeveria</h3>
+                <p class="price">$15.99</p>
+                <p class="description">Rosette-forming succulent, various colors.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="indoor" data-product-id="fiddle-leaf-008">
+                <img src="FiddleLeafFig.jpg" alt="Fiddle Leaf Fig" loading="lazy">
+                <h3>Fiddle Leaf Fig</h3>
+                <p class="price">$59.99</p>
+                <p class="description">Popular indoor tree with large leaves.</p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Quantity">
+                    <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <h3>Free Delivery</h3>
+                <p>Free shipping on orders over $50</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Plant Care Tips</h3>
+                <p>Expert advice for plant maintenance</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Plant Installation</h3>
+                <p>Professional installation services</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Plant Care Blog</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="hi.webp" alt="Plant Care Tips" loading="lazy">
+                <div class="blog-content">
+                    <h3>Essential Plant Care Tips</h3>
+                    <p>Learn the basics of keeping your plants healthy...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Plant Street, Garden City</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@greenthumb.com</p>
+            </div>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            </div>
+        <div class="cart-summary">
+            <div>Subtotal: <span id="cart-subtotal">$0.00</span></div>
+            <div>Shipping: <span id="cart-shipping">$0.00</span></div>
+            <div class="total">Total: <span id="cart-total">$0.00</span></div>
+            <button class="clear-cart">Clear Cart</button>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="login-heading">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close login dialog">&times;</button>
+            <h2 id="login-heading">Login</h2>
+            <form id="login-form" action="#" method="post">
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required aria-label="Email">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="switch-form">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="signup-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="signup-heading">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close sign up dialog">&times;</button>
+            <h2 id="signup-heading">Sign Up</h2>
+            <form id="signup-form" action="#" method="post">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full Name" required aria-label="Full Name">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required aria-label="Email">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" required aria-label="Confirm Password">
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p class="switch-form">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
